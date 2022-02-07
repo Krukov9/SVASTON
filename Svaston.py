@@ -2,7 +2,6 @@ print("""  __
  (_      _.  _ _|_  _  ._  
  __) \/ (_| _>  |_ (_) | | """)
 print("[1].Penis")
-print("[2].Swastika(not avaible)")
 
 choose = input(">>>")
 if choose == "1":
@@ -24,5 +23,3 @@ if choose == "1":
     screenshot = pyautogui.screenshot()
     screenshot.save('SvastonScreen.png')
     print("[Penis.minecraft]Succesfully")
-if choose == "2":
-    print("Not avaible")
