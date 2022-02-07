@@ -1,43 +1,28 @@
-import socket
-import ipaddress
-print("""(`| / /|(`-|-/\|\ |
-_)|/ /-|_) | \/| \|""")
-print("IP:")
-print(" [1].сканер портов")
-print(" [2].узнать свой айпи")
-print(" [3].узнать айпи сайта")
-print(" [4].проверить айпи адрес на приватность")
-while 1 == 1:
-    chs = input(">>>")
-    if chs == "1":
-        ipi = input("введите айпи:")
-        def scan_port(ip,port):
-            sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-            sock.settimeout(0.5)
-            try:
-                connect = sock.connect((ip,port))
-                print('Порт:',port,'открыт.')
-                sock.close()
-            except:
-                pass
-        ip = (ipi)
-        for i in range(1000):
-            scan_port(ip,i)
-    if chs == "2":
-        my_ip = socket.gethostbyname_ex(socket.gethostname())
-        print("Ваш айпи:", my_ip[2][0])
-    if chs == "3":
-        pichs = input("Введите сайт:")
-        ip = socket.gethostbyname(pichs)
-        print(ip)
-    if chs == "4":
-        ipch = input("Введите своё айпи:")
-        ipa = ipaddress.ip_address(ipch)
-        print(ipa.is_private, "Ваш адрес приватный?")
-        print(ipa.is_global, "Ваш адрес глобальный?")
-        
-        
-        
-        
-        
-        
+print("""  __                       
+ (_      _.  _ _|_  _  ._  
+ __) \/ (_| _>  |_ (_) | | """)
+print("[1].Penis")
+print("[2].Swastika(not avaible)")
+
+choose = input(">>>")
+if choose == "1":
+    import pyautogui
+    import time
+    time.sleep(5)
+    pyautogui.click(button='right')
+    pyautogui.moveTo(963,241)
+    pyautogui.click(button='right')
+    pyautogui.moveTo(1280,815)
+    pyautogui.click(button='right')
+    pyautogui.moveTo(335,532)
+    pyautogui.click(button='right')
+    pyautogui.moveTo(1280,249)
+    pyautogui.keyDown('Space')
+    pyautogui.click(button='right')
+    pyautogui.keyUp('Space')
+    pyautogui.PAUSE = 5
+    screenshot = pyautogui.screenshot()
+    screenshot.save('SvastonScreen.png')
+    print("[Penis.minecraft]Succesfully")
+if choose == "2":
+    print("Not avaible")
